@@ -1,0 +1,94 @@
+/* Page Assistant Extension Styles */
+
+/* Ensure the page-assistant elements don't inherit styles from the webpage */
+#page-assistant-button,
+#page-assistant-panel,
+#page-assistant-panel * {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+/* Floating Button */
+#page-assistant-button {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#page-assistant-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#page-assistant-button:active {
+  transform: scale(0.95);
+}
+
+/* Panel */
+#page-assistant-panel {
+  overflow: hidden;
+}
+
+/* Chat container */
+#page-assistant-chat-container {
+  background-color: #f9f9f9;
+}
+.disabled {
+  pointer-events: none; /* Disables all clicks */
+  opacity: 0.5; /* Makes it look disabled */
+}
+
+
+/* Message styles */
+.page-assistant-user-message,
+.page-assistant-ai-message {
+  color: black;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+.page-assistant-ai-message strong,
+.page-assistant-user-message strong {
+  font-weight: bold !important; /* Ensure bold text appears */
+  color: #333; /* Optional: Adjust text color if needed */
+}
+
+
+/* Input container */
+.page-assistant-input-container {
+  background-color: black;
+}
+
+#page-assistant-input {
+  transition: border-color 0.2s;
+}
+
+#page-assistant-input:focus {
+  outline: none;
+  border-color: #4285F4;
+}
+
+#page-assistant-send {
+  transition: background-color 0.2s;
+}
+
+#page-assistant-send:hover {
+  background-color: #3367d6;
+}
+
+#page-assistant-send:active {
+  transform: scale(0.95);
+}
+
+/* Header */
+.page-assistant-header {
+  background-color: gray;
+}
+
+.page-assistant-header button {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.page-assistant-header button:hover {
+  opacity: 1;
+}
